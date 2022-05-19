@@ -1,0 +1,39 @@
+.posts {
+  margin-top: 40px;
+  font-size: #363636;
+
+  &__results {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__loader {
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+  }
+
+  &__list {
+    margin-top: 45px;
+    gap: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__empty-list {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    line-height: 50px;
+  }
+}

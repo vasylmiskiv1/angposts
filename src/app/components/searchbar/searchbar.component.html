@@ -1,0 +1,15 @@
+<div class="searchbar">
+  <div class="searchbar__article">Filter by keywords</div>
+  <mat-icon
+    class="searchbar__icon"
+    aria-hidden="false" 
+    aria-label="Search icon"
+  >search</mat-icon>
+  <input
+    [ngModel]="inputValue"
+    (ngModelChange)="inputChange($event)"
+    class="searchbar__input"
+    type="text"
+    placeholder="The most successful IT companies in 2020"
+  >
+</div>

@@ -1,0 +1,21 @@
+<div class="posts">
+  <div class="posts__results">
+    Results: {{this.posts.length}}
+  </div>
+  <div class="posts__list">
+    <app-home-post-item
+      *ngFor="let post of posts"
+      [post]="post"
+    ></app-home-post-item>
+  </div>
+  <div *ngIf="!currentInput.length" class="posts__empty-list">
+    Required news list is empty
+  </div>
+  <img 
+    class="posts__loader" 
+    *ngIf="!isLoaded" 
+    src="../../../assets/loader.gif" 
+    alt="loader"
+  >
+</div>
+
